@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+            <link href="./app.css" rel="stylesheet" />
+        <script type="text/javascript" src="./basics.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+        <title></title>
+    
+        <style>
+            .button-modern {
+                color: black;
+                background-color: white;
+                width: 100px;
+                top: 100px;
+                border-radius: 5px;
+                padding: 2px;
+                margin-left: 3px;
+                margin-right: 4px;
+                min-width: 200px;
+                border-color: silver;
+                position: absolute;
+                font-size: 14px;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: whitesmoke; height: 600px; width: 800px;font-size: 12pt;">
+        <table id="search-panel" style="background-color: white;border-radius: 8px;border: 1px silver solid;">
+            <tr>
+                <td style="min-width: 100px;">
+                    Categorie
+                </td>
+                <td  style="min-width: 150px;">
+                    <input type="text" />
+                </td>
+                <td  style="min-width: 100px;">
+                    Modele
+                </td>
+                <td  style="min-width: 150px">
+                    <input type="text" />
+                </td>
+                <td  style="min-width: 100px;">
+                    Qualité
+                </td>
+                <td  style="min-width: 150px">
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Article 
+                </td>
+                <td  colspan="3" >
+                    <input type="text" style="width: 31em"/>
+                </td>
+            </tr>
+        </table>
+        <script>
+         
+         
+        </script>
+        <script type="text/vbscript">            
+            var t = new my.controls.Spliter();
+            document.body.appendChild(t.pt);
+            t.Size = new my.controls.size("900px","700px");
+            var l = t.roomLeft;
+            var r = t.roomRight;
+            var s = t.Splliter;
+            var p = t.pt;
+            var pg = new my.controls.TopPage();
+            pg.add(0, new my.controls.LayoutItem().pt);
+            pg.add(0, new my.controls.LayoutItem().pt);
+            pg.add(0, new my.controls.LayoutItem().pt);
+            pg = pg.pt;
+            pg.style.left = '0px';
+            pg.style.top = '0px';
+            pg.style.bottom = '0px';
+            pg.style.right = '0px';
+
+            pg = new my.controls.TopPage();
+            pg.appendTab('achour');
+            pg.add(0, new my.controls.LayoutItem().pt);
+            pg.add(0, new my.controls.LayoutItem().pt);
+            pg.add(0, new my.controls.LayoutItem().pt);
+            l.appendChild(pg.pt);
+            pg = pg.pt;
+            pg.style.left = '1px';
+            pg.style.top = '1px';
+            pg.style.bottom = '1px';
+            pg.style.right = '1px';
+        
+        </script>
+        <script>
+            //var tp = new my.controls.TopPage();
+            //document.body.firstChild.appendChild(tp.pt);
+            //tp.appendTab('desk');
+            //var x = tp.appendTab('money');
+            //tp.pt.style.width = "950px";
+            //tp.pt.style.height = "700px";
+            //var gl = new my.controls.FlowLayout();
+            //tp.add(0, gl.pt);
+            //var items = [];
+            //var x = Date.now();
+            //var l = 13;
+            //for(var i = 0;i < l;i++){
+            //    items.push(x = new my.controls.LayoutItem())
+            //    x.pt.style.width = 250 + parseInt(x.pt.offsetWidth) + 7 * i  + "px";
+            //    x.pt.style.height = 250 + parseInt(x.pt.offsetWidth) + 4 * i + "px";
+            //    x.Title = "Aricle #" + i;
+            //}
+
+            //gl.add(items);
+            var oo = 0;
+        </script> 
+    </body>
+</html>

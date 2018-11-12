@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+
+<html style="overflow: hidden" lang=" en" ng-app="ALNgApp" class="ng-scope">
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>                      
+    
+    <link href="./css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+    <!--<link href='./css/bootstrap.min.css' rel="stylesheet" />-->
+    <link href='app.css' rel="stylesheet" />
+    <link href="./css/jPicker-1.1.6.min.css" rel="stylesheet" />
+    <link href="./css/6fa614521016.css" rel="stylesheet" />
+        
+    <!--<link href="./css/site.css" rel="stylesheet" />-->
+    <link href="./css/index.css" rel="stylesheet" />
+    <!--<link href="./css/test.css" rel="stylesheet" />-->
+    <style>
+        
+         /*input[type="text"],.textbox {
+             color: black;
+             background-color: white;
+             width: 100px;
+             top: 100px;
+             border-radius: 5px;
+             padding: 2px;
+             margin-left: 3px;
+             margin-right: 4px;
+             min-width: 200px;
+             border-color: silver;
+             position: absolute;
+             font-size: 14px;
+         }*/
+        .toppage > .head > li:first-child {
+            margin-left: 10px;
+        }
+        .toppage>.head>li {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .toppage {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        #speed {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        #menu {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 45px;
+            width: 200px
+        }
+    </style>
+    <script type="text/javascript" src="./basics.js"></script>
+    <script type="text/javascript" src="./app.js"></script> 
+    <script src="./DTH.js"></script>
+     
+    <script src="js/nodejs/jquery-2.1.0.js"></script>
+    <!--<script src="./js/jquery-1.10.2.min.js"></script>-->
+    <script src='./js/bootstrap.min.js'></script>
+    
+    <!-- <script src="./Qs.js"></script> 
+    <script src="./mscorlib.js"></script>
+    <script src="./thread.js"></script>-->
+    <script src='./ts/Slideout.js'></script>
+    <script src='./ts/STheme.js'></script>
+    <!--<script src="./js/test.js"></script>-->
+    <style>
+        .layout-item {
+            width: 200px;
+            height: 180px;
+        }
+    </style>
+   
+</head>
+    <body style="background:linear-gradient(145deg, #1D1F20, #404348)">
+        <table id="search-panel" style="background-color: white;border-radius: 8px;">
+            <tr>
+                <td style="min-width: 100px;">
+                    Categorie
+                </td>
+                <td  style="min-width: 150px;">
+                    <input type="text"  />
+                </td>
+                <td  style="min-width: 100px;">
+                    Modele
+                </td>
+                <td  style="min-width: 150px">
+                    <input type="text" />
+                </td>
+                <td  style="min-width: 100px;">
+                    Qualité
+                </td>
+                <td  style="min-width: 150px">
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Article 
+                </td>
+                <td  colspan="3" >
+                    <input type="text" style="width: 31em"/>
+                </td>
+            </tr>
+        </table>
+        <nav id="menu" class="menu slideout-menu menu1" style="top:30px;left:0px;position:fixed;width:250px;height: 100%">
+            <!--<div id="speed" style="left: 0;width: 48px;bottom: 0px;top:0px;position: absolute;border-right: 3px black solid;background-image:linear-gradient(145deg,white, white) ">
+                <button id='tg1' class="btn-hamburger js-slideout-toggle"  style="position: absolute;width: 40px;height: 40px;left: 5px;top: -2px"></button>
+            </div>-->
+            <header class="menu-header">
+                <span id="tg1" class="menu-header-title">Tests</span>
+            </header>
+            <section class="menu-section">
+                <h3 class="menu-section-title">Docs</h3>
+                <ul class="menu-section-list">
+                    <li><a href="#content" target="_blank">Installation</a></li>
+                    <li><a href="#menubar" target="_blank">Usage</a></li>
+                </ul>
+            </section>
+        </nav>
+        <nav id='menubar' role="menubar" style="z-index:99;top: 0px;left: 0px;width: 100%;min-width: 100%;max-width: 100%;width: 100%;height: auto;min-height:1.5em;background:dodgerblue ;position:fixed">
+            <!--<div class="btn-group">
+                <button type="button" class="btn btn-primary  dropdown-toggle" data-toggle="dropdown">
+                    Menu
+                    <span class="caret"></span>
+                </butto>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a id='kk'>A link</a></li>
+                    <li><a href="#">Another link</a></li>
+                    <li><a href="#">Something else here</a></li>
+                </ul>
+            </div>-->
+        </nav>
+        <div class="panel" style="position:fixed;top:30px;left:1px;width:100%;height:100%;z-index:0;background-color:white;" aria-orientation="horizontal">
+            <div style="left: 2px;right: 0;bottom: 0;top:0;position:absolute;overflow: visible">
+                 <div id="main-panel">
+            </div>
+            </div>
+        </div>
+        <!--<div style="overflow:hidden;position:fixed;width:1000px;height:800px;left:0;">
+                <dialog role="dialog" id='diag' title='Run Simulation' controls='close|min|max'>
+                    <div role="main" id='content'>
+                        <tabpage  id="ftabp">
+                            <div title="Edit" name="Achour">
+                                <div class="results scrollable" style="width: auto;height: 400px ;background: top center #444;overflow: scroll">
+                                    <table id="table" style=" background: #e6e6fa; display: table;" class="data mytable">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div title="Close">
+                            </div>
+                        </tabpage>
+                    </div>
+                </dialog>
+                
+            </div>-->
+        <input spellcheck="true" placeholder=""/>
+         <script>
+             var t = new my.controls.TopPage();
+             var x = document.getElementById('main-panel');
+
+             t.setTitle(0, 'Shopping');
+             t.appendTab('Sels');
+             t.appendTab('Buy');
+             t.appendTab('Client Space');
+             t.appendTab('');
+             t.appendTab('Demandes');
+             t.appendTab('Offers');
+             t.appendTab('');
+             t.appendTab('Notes');
+             t.appendTab('Blog');
+             t.appendTab('Social');
+             var Case = t.appendTab('Case');
+             var Settings = t.appendTab('Settings');
+             var searchEngine = new my.controls.GroupBox('Search');
+             var sp = $('#search-panel')[0];
+             searchEngine.content.appendChild(sp);
+             //sp.parentElement.removeChild(sp);
+             t.add(0, searchEngine.pt);
+             var fl = new my.controls.FlowLayout();
+             fl.pt.style.position = 'absolute';
+             fl.pt.style.borderColor = 'steelblue';
+             sp.style.borderColor = 'steelblue';
+             searchEngine.pt.style.borderColor = 'steelblue';
+             searchEngine.pt.style.right = '3px';
+
+             t.add(0, fl.pt);
+
+             //t.setTitle(0, 'المتجر');
+             //t.setTitle(1, 'البيع');
+             //t.appendTab('الشراء');
+             //t.appendTab('العروض');
+             x.appendChild(t.pt);
+             var s = t.pt.style;
+             s.left= '2px';
+             s.top= '1px';
+             s.bottom= '80px';
+             s.right = '3px';
+
+             fl.pt.style.top = '7em';
+             var x = new Array(100);
+             var i = 0;
+             for (var i = 0; i < 100; i++) x[i] = new window.my.controls.LayoutItem();
+             fl.add(x);
+
+             
+                </script>
+         <footer style="z-index:9999;position:fixed;bottom:0px;height:30px;background-color:black;left:0;right:0;">
+            <img src="./icons/start.bmp"  style="left: 1px; top: 0; bottom: 0; width: 36px;position:absolute">
+            <img src="./icons/desktop.bmp" style="left: 36px; top: 0; bottom: 0; width: 36px;position:absolute"  /> 
+        </footer>
+        <!--<script>
+            main();
+        </script>-->
+    </body>
+</html>
+
+<!--
+
+     <main>
+            <nav role="menubar" style="top: 0px;left: 0px;width: 100%;min-width: 100%;max-width: 100%;width: 100%;height: 47px;background: black">
+
+            </nav>
+        </main>
+    <dialog id='diag' title='Run Simulation' controls='close|min|max' style="max-width: 800px;max-height: ">
+        <div id='content'>
+            <tabpage id="ftabp">
+                <div title="Edit" name="Achour">
+                    <div class="results" style="background: top center #444; height: 400px; overflow: scroll">
+                        <table id="table" style=" background: #e6e6fa; display: table;" class="data">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div title="Close">
+                </div>
+            </tabpage>
+        </div>
+    </dialog>
+    <dialog id='diag' title='Run Simulation' controls='close|min|max' style="max-width: 800px;max-height: ">
+        <div id='content'>
+            <tabpage id="ftabp">
+                <div title="Edit" name="Achour">
+                    <div class="results" style="background: top center #444; height: 400px; overflow: scroll">
+                        <table id="table" style=" background: #e6e6fa; display: table;" class="data">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div title="Close">
+                </div>
+            </tabpage>
+        </div>
+    </dialog>
+    -->
+<!-- placed at the end of file
+    <script>
+            update();
+        </script>
+-->

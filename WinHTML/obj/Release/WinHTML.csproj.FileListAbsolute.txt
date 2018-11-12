@@ -1,0 +1,6 @@
+C:\Users\°\Documents\Visual Studio 2013\Projects\WinHTML\WinHTML\bin\WinHTML.dll.config
+C:\Users\°\Documents\Visual Studio 2013\Projects\WinHTML\WinHTML\bin\WinHTML.dll
+C:\Users\°\Documents\Visual Studio 2013\Projects\WinHTML\WinHTML\bin\WinHTML.pdb
+C:\Users\°\Documents\Visual Studio 2013\Projects\WinHTML\WinHTML\obj\Release\WinHTML.csprojResolveAssemblyReference.cache
+C:\Users\°\Documents\Visual Studio 2013\Projects\WinHTML\WinHTML\obj\Release\WinHTML.dll
+C:\Users\°\Documents\Visual Studio 2013\Projects\WinHTML\WinHTML\obj\Release\WinHTML.pdb
